@@ -5,13 +5,18 @@ import {MatButtonModule, MatCheckboxModule} from '@angular/material';
 
 
 import { AppComponent } from './app.component';
+import { FormComponent } from './form/form.component';
+import { FormRadioBtnComponent } from './form-radio-btn/form-radio-btn.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    FormComponent,
+    FormRadioBtnComponent
   ],
   imports: [
-    BrowserModule, BrowserAnimationsModule, MatButtonModule
+    BrowserModule, BrowserAnimationsModule, MatButtonModule, ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
